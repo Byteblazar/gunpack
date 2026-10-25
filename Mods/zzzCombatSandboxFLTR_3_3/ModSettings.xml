@@ -206,10 +206,19 @@
 		<Buttons left="No" right="Yes" />
 	</Switch>
 
-<!-- TODO selector -->
-<Selector name="Enable_T4_CraftingEasierCrafting" displayKey="ui_Enable_T4_CraftingEasierCrafting" tooltipKey="tip_Enable_T4_CraftingEasierCrafting" defaultValue="Default">
+
+<!-- <Selector name="Enable_T4_CraftingEasierCrafting" displayKey="ui_Enable_T4_CraftingEasierCrafting" tooltipKey="tip_Enable_T4_CraftingEasierCrafting" defaultValue="Default">
 <Property type="arrayValues" allowedValues="Default,Fewer,More" />
+</Selector> -->
+
+
+<Selector name="Enable_T4_CraftingEasierCrafting" displayKey="ui_Enable_T4_CraftingEasierCrafting" type="string" defaultValue="Default">
+	<List allowedValues="Default,Fewer,More" />
+	
+	<Description key="tip_Enable_T4_CraftingEasierCrafting" />
 </Selector>
+
+
 </Category>
 
 
@@ -228,7 +237,7 @@
 <!-- <Switch name="Enable_T4_RepairNoLegParts" displayKey="ui_Enable_T4_RepairNoLegParts" tooltipKey="tip_Enable_T4_RepairNoLegParts" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
 
 	<Switch name="Enable_T4_RepairNoLegParts" displayKey="ui_Enable_T4_RepairNoLegParts" type="string"  defaultValue="Yes">
-		<Description key="ui_Enable_T4_RepairNoLegParts" />
+		<Description key="tip_Enable_T4_RepairNoLegParts" />
 		<Buttons left="No" right="Yes" />
 	</Switch>
 
@@ -236,10 +245,18 @@
 <Category name="T4DegradationCategory" displayKey="uiT4DegradationCategory" tooltipKey="tipT4DegradationCategory">
 <Description key="tipT4DegradationCategory" />
 
-<!-- TODO selector -->
-<Selector name="Enable_T4_DegradationSelector" displayKey="ui_Enable_T4_DegradationSelector" tooltipKey="tip_Enable_T4_DegradationSelector" defaultValue="Default">
+<!-- <Selector name="Enable_T4_DegradationSelector" displayKey="ui_Enable_T4_DegradationSelector" tooltipKey="tip_Enable_T4_DegradationSelector" defaultValue="Default">
 <Property type="arrayValues" allowedValues="Default,2x,3x,4x,5x" />
+</Selector> -->
+
+<Selector name="Enable_T4_DegradationSelector" displayKey="ui_Enable_T4_DegradationSelector" type="string" defaultValue="Default">
+	<List allowedValues="Default,2x,3x,4x,5x" />
+	
+	<Description key="tip_Enable_T4_DegradationSelector" />
 </Selector>
+
+
+
 </Category>
 
 
@@ -297,105 +314,416 @@
 
 
 <Category name="LootCommonGuns" displayKey="uiLootCommonGuns" tooltipKey="tipLootCommonGuns">
-<Description key="XXX" />
+<Description key="tipLootCommonGuns" />
 
 
 
-<Switch name="LootCommonGunsBagsRacksCrates" displayKey="uiLootCommonGunsBagsRacksCrates" tooltipKey="tipLootCommonGunsBagsRacksCrates" defaultValue="No" leftValue="No" rightValue="Yes" />
+<!-- <Switch name="LootCommonGunsBagsRacksCrates" displayKey="uiLootCommonGunsBagsRacksCrates" tooltipKey="tipLootCommonGunsBagsRacksCrates" defaultValue="No" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="LootCommonGunsBagsRacksCrates" displayKey="uiLootCommonGunsBagsRacksCrates" type="string"  defaultValue="No">
+		<Description key="tipLootCommonGunsBagsRacksCrates" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
 
 
-<Switch name="LootCommonGunsSafes" displayKey="uiLootCommonGunsSafes" tooltipKey="tipLootCommonGunsSafes" defaultValue="No" leftValue="No" rightValue="Yes" />
+<!-- <Switch name="LootCommonGunsSafes" displayKey="uiLootCommonGunsSafes" tooltipKey="tipLootCommonGunsSafes" defaultValue="No" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="LootCommonGunsSafes" displayKey="uiLootCommonGunsSafes" type="string"  defaultValue="No">
+		<Description key="tipLootCommonGunsSafes" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
 
 
-<Switch name="LootCommonGunsArmyTrucksPoliceCars" displayKey="uiLootCommonGunsArmyTrucksPoliceCars" tooltipKey="tipLootCommonGunsArmyTrucksPoliceCars" defaultValue="No" leftValue="No" rightValue="Yes" />
+
+<!-- <Switch name="LootCommonGunsArmyTrucksPoliceCars" displayKey="uiLootCommonGunsArmyTrucksPoliceCars" tooltipKey="tipLootCommonGunsArmyTrucksPoliceCars" defaultValue="No" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="LootCommonGunsArmyTrucksPoliceCars" displayKey="uiLootCommonGunsArmyTrucksPoliceCars" type="string"  defaultValue="No">
+		<Description key="tipLootCommonGunsArmyTrucksPoliceCars" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
 
 
-<Switch name="LootCommonGunsFootlockers" displayKey="uiLootCommonGunsFootlockers" tooltipKey="tipLootCommonGunsFootlockers" defaultValue="No" leftValue="No" rightValue="Yes" />
+
+<!-- <Switch name="LootCommonGunsFootlockers" displayKey="uiLootCommonGunsFootlockers" tooltipKey="tipLootCommonGunsFootlockers" defaultValue="No" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="LootCommonGunsFootlockers" displayKey="uiLootCommonGunsFootlockers" type="string"  defaultValue="No">
+		<Description key="tipLootCommonGunsFootlockers" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+
+
 </Category>
+
+
+
 
 
 <Category name="LootTierZeroWeapons" displayKey="uiLootTierZeroWeapons" tooltipKey="tipLootTierZeroWeapons">
-<Description key="XXX" />
+<Description key="tipLootTierZeroWeapons" />
 
 
-<Switch name="LootTierZeroWeaponsRanged" displayKey="uiLootTierZeroWeaponsRanged" tooltipKey="tipLootTierZeroWeaponsRanged" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="LootTierZeroWeaponsBows" displayKey="uiLootTierZeroWeaponsBows" tooltipKey="tipLootTierZeroWeaponsBows" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="LootTierZeroWeaponsMelee" displayKey="uiLootTierZeroWeaponsMelee" tooltipKey="tipLootTierZeroWeaponsMelee" defaultValue="Yes" leftValue="No" rightValue="Yes" />
+<!-- <Switch name="LootTierZeroWeaponsRanged" displayKey="uiLootTierZeroWeaponsRanged" tooltipKey="tipLootTierZeroWeaponsRanged" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="LootTierZeroWeaponsRanged" displayKey="uiLootTierZeroWeaponsRanged" type="string"  defaultValue="Yes">
+		<Description key="tipLootTierZeroWeaponsRanged" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+<!-- <Switch name="LootTierZeroWeaponsBows" displayKey="uiLootTierZeroWeaponsBows" tooltipKey="tipLootTierZeroWeaponsBows" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+
+	<Switch name="LootTierZeroWeaponsBows" displayKey="uiLootTierZeroWeaponsBows" type="string"  defaultValue="Yes">
+		<Description key="tipLootTierZeroWeaponsBows" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+
+
+<!-- <Switch name="LootTierZeroWeaponsMelee" displayKey="uiLootTierZeroWeaponsMelee" tooltipKey="tipLootTierZeroWeaponsMelee" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="LootTierZeroWeaponsMelee" displayKey="uiLootTierZeroWeaponsMelee" type="string"  defaultValue="Yes">
+		<Description key="tipLootTierZeroWeaponsMelee" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+
 </Category>
-<Category name="NoteKick2" displayKey="uiNoteKick2" tooltipKey="tipNoteKick2" />
+
+
+<!-- <Category name="NoteKick2" displayKey="uiNoteKick2" tooltipKey="tipNoteKick2" /> -->
+
+<Category name="NoteKick2" displayKey="uiNoteKick2" tooltipKey="tipNoteKick2">
+<Description key="tipNoteKick2" />
+</Category>
 </Tab>
+
+
 <Tab name="RestrictedRunSettings" displayKey="uiRestrictedRunSettings" tooltipKey="tipRestrictedRunSettings">
-<Description key="XXX" />
+<Description key="tipRestrictedRunSettings" />
+
+
+
 <Category name="RestrictedRunPacifistTrader" displayKey="uiRestrictedRunPacifistTraders" tooltipKey="tipRestrictedRunPacifistTrader">
-<Description key="XXX" />
-<Switch name="RestrictedRunPacifistTraderNoSell" displayKey="uiRestrictedRunPacifistTraderNoSell" tooltipKey="tipRestrictedRunPacifistTraderNoSell" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="RestrictedRunPacifistTraderNoBuy" displayKey="uiRestrictedRunPacifistTraderNoBuy" tooltipKey="tipRestrictedRunPacifistTraderNoBuy" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="RestrictedRunPacifistTraderQuestRewards" displayKey="uiRestrictedRunPacifistTraderQuestRewards" tooltipKey="tipRestrictedRunPacifistTraderQuestRewards" defaultValue="Yes" leftValue="No" rightValue="Yes" />
+<Description key="tipRestrictedRunPacifistTrader" />
+
+
+<!-- <Switch name="RestrictedRunPacifistTraderNoSell" displayKey="uiRestrictedRunPacifistTraderNoSell" tooltipKey="tipRestrictedRunPacifistTraderNoSell" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+
+	<Switch name="RestrictedRunPacifistTraderNoSell" displayKey="uiRestrictedRunPacifistTraderNoSell" type="string"  defaultValue="Yes">
+		<Description key="tipRestrictedRunPacifistTraderNoSell" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+<!-- <Switch name="RestrictedRunPacifistTraderNoBuy" displayKey="uiRestrictedRunPacifistTraderNoBuy" tooltipKey="tipRestrictedRunPacifistTraderNoBuy" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="RestrictedRunPacifistTraderNoBuy" displayKey="uiRestrictedRunPacifistTraderNoBuy" type="string"  defaultValue="Yes">
+		<Description key="tipRestrictedRunPacifistTraderNoBuy" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+<!-- <Switch name="RestrictedRunPacifistTraderQuestRewards" displayKey="uiRestrictedRunPacifistTraderQuestRewards" tooltipKey="tipRestrictedRunPacifistTraderQuestRewards" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="RestrictedRunPacifistTraderQuestRewards" displayKey="uiRestrictedRunPacifistTraderQuestRewards" type="string"  defaultValue="Yes">
+		<Description key="tipRestrictedRunPacifistTraderQuestRewards" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+	
+	
 </Category>
+
+
 <Category name="RestrictedRunNoCrafting" displayKey="uiRestrictedRunNoCrafting" tooltipKey="tipRestrictedRunNoCrafting">
-<Description key="XXX" />
-<Switch name="RestrictedRunNoCraftingT0" displayKey="uiRestrictedRunNoCraftingT0" tooltipKey="tipRestrictedRunNoCraftingT0" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="RestrictedRunNoCraftingWeapons" displayKey="uiRestrictedRunNoCraftingWeapons" tooltipKey="tipRestrictedRunNoCraftingWeapons" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="RestrictedRunNoCraftingAmmo" displayKey="uiRestrictedRunNoCraftingAmmo" tooltipKey="tipRestrictedRunNoCraftingAmmo" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="RestrictedRunNoCraftingThrown" displayKey="uiRestrictedRunNoCraftingThrown" tooltipKey="tipRestrictedRunNoCraftingThrown" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="RestrictedRunNoCraftingTraps" displayKey="uiRestrictedRunNoCraftingTraps" tooltipKey="tipRestrictedRunNoCraftingTraps" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="RestrictedRunNoCraftingMines" displayKey="uiRestrictedRunNoCraftingMines" tooltipKey="tipRestrictedRunNoCraftingMines" defaultValue="Yes" leftValue="No" rightValue="Yes" />
+<Description key="tipRestrictedRunNoCrafting" />
+
+
+<!-- <Switch name="RestrictedRunNoCraftingT0" displayKey="uiRestrictedRunNoCraftingT0" tooltipKey="tipRestrictedRunNoCraftingT0" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="RestrictedRunNoCraftingT0" displayKey="uiRestrictedRunNoCraftingT0" type="string"  defaultValue="Yes">
+		<Description key="tipRestrictedRunNoCraftingT0" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+<!-- <Switch name="RestrictedRunNoCraftingWeapons" displayKey="uiRestrictedRunNoCraftingWeapons" tooltipKey="tipRestrictedRunNoCraftingWeapons" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+
+	<Switch name="RestrictedRunNoCraftingWeapons" displayKey="uiRestrictedRunNoCraftingWeapons" type="string"  defaultValue="Yes">
+		<Description key="tipRestrictedRunNoCraftingWeapons" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+<!-- <Switch name="RestrictedRunNoCraftingAmmo" displayKey="uiRestrictedRunNoCraftingAmmo" tooltipKey="tipRestrictedRunNoCraftingAmmo" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="RestrictedRunNoCraftingAmmo" displayKey="uiRestrictedRunNoCraftingAmmo" type="string"  defaultValue="Yes">
+		<Description key="tipRestrictedRunNoCraftingAmmo" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+
+<!-- <Switch name="RestrictedRunNoCraftingThrown" displayKey="uiRestrictedRunNoCraftingThrown" tooltipKey="tipRestrictedRunNoCraftingThrown" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="RestrictedRunNoCraftingThrown" displayKey="uiRestrictedRunNoCraftingThrown" type="string"  defaultValue="Yes">
+		<Description key="tipRestrictedRunNoCraftingThrown" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+<!-- <Switch name="RestrictedRunNoCraftingTraps" displayKey="uiRestrictedRunNoCraftingTraps" tooltipKey="tipRestrictedRunNoCraftingTraps" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="RestrictedRunNoCraftingTraps" displayKey="uiRestrictedRunNoCraftingTraps" type="string"  defaultValue="Yes">
+		<Description key="tipRestrictedRunNoCraftingTraps" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+
+<!-- <Switch name="RestrictedRunNoCraftingMines" displayKey="uiRestrictedRunNoCraftingMines" tooltipKey="tipRestrictedRunNoCraftingMines" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="RestrictedRunNoCraftingMines" displayKey="uiRestrictedRunNoCraftingMines" type="string"  defaultValue="Yes">
+		<Description key="tipRestrictedRunNoCraftingMines" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
 </Category>
+
+
 <Category name="AllWeaponsRepairDegradationCategory" displayKey="uiAllWeaponsRepairDegradationCategory" tooltipKey="tipAllWeaponsRepairDegradationCategory">
-<Description key="XXX" />
-<Switch name="Enable_AllWeapons_Repair_RepairKit" displayKey="ui_Enable_AllWeapons_Repair_RepairKit" tooltipKey="tip_Enable_AllWeapons_Repair_RepairKit" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="Enable_AllWeapons_Repair_RepairKit_Tools" displayKey="ui_Enable_AllWeapons_Repair_RepairKit_Tools" tooltipKey="tip_Enable_AllWeapons_Repair_RepairKit_Tools" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="Enable_AllWeapons_Repair_CombineStation" displayKey="ui_Enable_AllWeapons_Repair_CombineStation" tooltipKey="tip_Enable_AllWeapons_Repair_CombineStation" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Selector name="Enable_AllWeapons_DegradationSelector" displayKey="ui_Enable_AllWeapons_DegradationSelector" tooltipKey="tip_Enable_AllWeapons_DegradationSelector" defaultValue="Default">
+<Description key="tipAllWeaponsRepairDegradationCategory" />
+
+
+<!-- <Switch name="Enable_AllWeapons_Repair_RepairKit" displayKey="ui_Enable_AllWeapons_Repair_RepairKit" tooltipKey="tip_Enable_AllWeapons_Repair_RepairKit" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+
+	<Switch name="Enable_AllWeapons_Repair_RepairKit" displayKey="ui_Enable_AllWeapons_Repair_RepairKit" type="string"  defaultValue="Yes">
+		<Description key="tip_Enable_AllWeapons_Repair_RepairKit" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+
+<!-- <Switch name="Enable_AllWeapons_Repair_RepairKit_Tools" displayKey="ui_Enable_AllWeapons_Repair_RepairKit_Tools" tooltipKey="tip_Enable_AllWeapons_Repair_RepairKit_Tools" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="Enable_AllWeapons_Repair_RepairKit_Tools" displayKey="ui_Enable_AllWeapons_Repair_RepairKit_Tools" type="string"  defaultValue="Yes">
+		<Description key="tip_Enable_AllWeapons_Repair_RepairKit_Tools" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+<!-- <Switch name="Enable_AllWeapons_Repair_CombineStation" displayKey="ui_Enable_AllWeapons_Repair_CombineStation" tooltipKey="tip_Enable_AllWeapons_Repair_CombineStation" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="Enable_AllWeapons_Repair_CombineStation" displayKey="ui_Enable_AllWeapons_Repair_CombineStation" type="string"  defaultValue="Yes">
+		<Description key="tip_Enable_AllWeapons_Repair_CombineStation" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+
+<!-- TODO -->
+<!-- <Selector name="Enable_AllWeapons_DegradationSelector" displayKey="ui_Enable_AllWeapons_DegradationSelector" tooltipKey="tip_Enable_AllWeapons_DegradationSelector" defaultValue="Default">
 <Property type="arrayValues" allowedValues="Default,2x,3x,4x,5x" />
+</Selector> -->
+
+
+<Selector name="Enable_AllWeapons_DegradationSelector" displayKey="ui_Enable_AllWeapons_DegradationSelector" type="string" defaultValue="Default">
+	<List allowedValues="Default,2x,3x,4x,5x" />
+	
+	<Description key="tip_Enable_AllWeapons_DegradationSelector" />
 </Selector>
+
 </Category>
-<Category name="NoteKick2" displayKey="uiNoteKick2" tooltipKey="tipNoteKick2" />
-<Description key="XXX" />
+
+
+<Category name="NoteKick2" displayKey="uiNoteKick2" tooltipKey="tipNoteKick2" >
+<Description key="tipNoteKick2" />
+
+</Category>
+
 </Tab>
+
 <Tab name="MiscSettings" displayKey="uiMiscSettings" tooltipKey="tipMiscSettings">
-<Description key="XXX" />
+<Description key="tipMiscSettings" />
+
+
+
 <Category name="MiscSettingsSoundOptions" displayKey="uiMiscSettingsSoundOptions" tooltipKey="tipMiscSettingsSoundOptions">
-<Description key="XXX" />
-<Selector name="Enable_IZY_VRP_sounds" displayKey="ui_Enable_IZY_VRP_sounds" tooltipKey="tip_Enable_IZY_VRP_sounds" defaultValue="IZY Classic">
+<Description key="tipMiscSettingsSoundOptions" />
+
+
+
+<!-- <Selector name="Enable_IZY_VRP_sounds" displayKey="ui_Enable_IZY_VRP_sounds" tooltipKey="tip_Enable_IZY_VRP_sounds" defaultValue="IZY Classic">
 <Property type="arrayValues" allowedValues="IZY Classic,Vanilla" />
+</Selector> -->
+
+
+
+<Selector name="Enable_IZY_VRP_sounds" displayKey="ui_Enable_IZY_VRP_sounds" type="string" defaultValue="IZY Classic">
+	<List allowedValues="IZY Classic,Vanilla" />
+	
+	<Description key="tip_Enable_IZY_VRP_sounds" />
 </Selector>
-<Switch name="MiscSettings_SilencedIZYWeapons" displayKey="uiMiscSettings_SilencedIZYWeapons" tooltipKey="tipMiscSettings_SilencedIZYWeapons" defaultValue="Off" leftValue="Off" rightValue="On" />
-<Switch name="MiscSettings_SilencedVanillaWeapons" displayKey="uiMiscSettings_SilencedVanillaWeapons" tooltipKey="tipMiscSettings_SilencedVanillaWeapons" defaultValue="Off" leftValue="Off" rightValue="On" />
+
+
+<!-- <Switch name="MiscSettings_SilencedIZYWeapons" displayKey="uiMiscSettings_SilencedIZYWeapons" tooltipKey="tipMiscSettings_SilencedIZYWeapons" defaultValue="Off" leftValue="Off" rightValue="On" /> -->
+
+	<Switch name="MiscSettings_SilencedIZYWeapons" displayKey="uiMiscSettings_SilencedIZYWeapons" type="string"  defaultValue="Off">
+		<Description key="tipMiscSettings_SilencedIZYWeapons" />
+		<Buttons left="Off" right="On" />
+	</Switch>
+
+<!-- <Switch name="MiscSettings_SilencedVanillaWeapons" displayKey="uiMiscSettings_SilencedVanillaWeapons" tooltipKey="tipMiscSettings_SilencedVanillaWeapons" defaultValue="Off" leftValue="Off" rightValue="On" /> -->
+
+	<Switch name="MiscSettings_SilencedVanillaWeapons" displayKey="uiMiscSettings_SilencedVanillaWeapons" type="string"  defaultValue="Off">
+		<Description key="tipMiscSettings_SilencedVanillaWeapons" />
+		<Buttons left="Off" right="On" />
+	</Switch>
+
+
 </Category>
+
+
 <Category name="MiscSettingsCategoryWeaponOptions" displayKey="uiMiscSettingsCategoryWeaponOptions" tooltipKey="tipMiscSettingsCategoryWeaponOptions">
-<Description key="XXX" />
-<Switch name="MiscSettings_Autoreload" displayKey="uiMiscSettings_Autoreload" tooltipKey="tipMiscSettings_Autoreload" defaultValue="All" leftValue="All" rightValue="Default" />
+<Description key="tipMiscSettingsCategoryWeaponOptions" />
+
+
+
+<!-- <Switch name="MiscSettings_Autoreload" displayKey="uiMiscSettings_Autoreload" tooltipKey="tipMiscSettings_Autoreload" defaultValue="All" leftValue="All" rightValue="Default" /> -->
+
+	<Switch name="MiscSettings_Autoreload" displayKey="uiMiscSettings_Autoreload" type="string"  defaultValue="All">
+		<Description key="tipMiscSettings_Autoreload" />
+		<Buttons left="All" right="Default" />
+	</Switch>
+
+
 </Category>
+
+
 <Category name="MiscSettingsCategoryModOptions" displayKey="uiMiscSettingsCategoryModOptions" tooltipKey="tipMiscSettingsCategoryModOptions">
-<Description key="XXX" />
-<Switch name="MiscSettings_DrumMagazine556" displayKey="uiMiscSettings_DrumMagazine556" tooltipKey="tipMiscSettings_DrumMagazine556" defaultValue="All" leftValue="All" rightValue="Some" />
-<Switch name="MiscSettings_NumberofModSlotsVanillaWeapons" displayKey="uiMiscSettings_NumberofModSlotsVanillaWeapons" tooltipKey="tipMiscSettings_NumberofModSlotsVanillaWeapons" defaultValue="Default" leftValue="IZY Classic" rightValue="Default" />
+<Description key="tipMiscSettingsCategoryModOptions" />
+
+
+
+<!-- <Switch name="MiscSettings_DrumMagazine556" displayKey="uiMiscSettings_DrumMagazine556" tooltipKey="tipMiscSettings_DrumMagazine556" defaultValue="All" leftValue="All" rightValue="Some" /> -->
+
+
+	<Switch name="MiscSettings_DrumMagazine556" displayKey="uiMiscSettings_DrumMagazine556" type="string"  defaultValue="All">
+		<Description key="tipMiscSettings_DrumMagazine556" />
+		<Buttons left="All" right="Some" />
+	</Switch>
+
+
+<!-- <Switch name="MiscSettings_NumberofModSlotsVanillaWeapons" displayKey="uiMiscSettings_NumberofModSlotsVanillaWeapons" tooltipKey="tipMiscSettings_NumberofModSlotsVanillaWeapons" defaultValue="Default" leftValue="IZY Classic" rightValue="Default" /> -->
+
+	<Switch name="MiscSettings_NumberofModSlotsVanillaWeapons" displayKey="uiMiscSettings_NumberofModSlotsVanillaWeapons" type="string"  defaultValue="Default">
+		<Description key="tipMiscSettings_NumberofModSlotsVanillaWeapons" />
+		<Buttons left="IZY Classic" right="Default" />
+	</Switch>
+
+
+
 </Category>
 <Category name="MiscSettingsCategoryAmmoOptions" displayKey="uiMiscSettingsCategoryAmmoOptions" tooltipKey="tipMiscSettingsCategoryAmmoOptions">
-<Description key="XXX" />
-<Switch name="MiscSettings_LooseAmmoBundleRecipeWorkbench" displayKey="uiMiscSettings_LooseAmmoBundleRecipe" tooltipKey="tipMiscSettings_LooseAmmoBundleRecipe" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="MiscSettings_LooseAmmoBundleRecipeAmmoPress" displayKey="uiMiscSettings_LooseAmmoBundleRecipeAmmoPress" tooltipKey="tipMiscSettings_LooseAmmoBundleRecipeAmmoPress" defaultValue="Yes" leftValue="No" rightValue="Yes" />
-<Switch name="MiscSettings_45ACP556APHPBookUnlock" displayKey="uiMiscSettings_45ACP556APHPBookUnlock" tooltipKey="tipMiscSettings_45ACP556APHPBookUnlock" defaultValue="No" leftValue="No" rightValue="Yes" />
-<Switch name="MiscSettings_Universalammo45ACPEnhanced" displayKey="uiMiscSettings_Universalammo45ACPEnhanced" tooltipKey="tipMiscSettings_Universalammo45ACPEnhanced" defaultValue="All .45 ACP Weapons" leftValue="Some .45 ACP Weapons" rightValue="All .45 ACP Weapons" />
-<Switch name="MiscSettings_UniversalammoShotgunHellFire" displayKey="uiMiscSettings_UniversalammoShotgunHellFire" tooltipKey="tipMiscSettings_UniversalammoShotgunHellFire" defaultValue="Default" leftValue="Default" rightValue="All Shotguns" />
+<Description key="tipMiscSettingsCategoryAmmoOptions" />
+
+
+
+<!-- <Switch name="MiscSettings_LooseAmmoBundleRecipeWorkbench" displayKey="uiMiscSettings_LooseAmmoBundleRecipe" tooltipKey="tipMiscSettings_LooseAmmoBundleRecipe" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="MiscSettings_LooseAmmoBundleRecipeWorkbench" displayKey="uiMiscSettings_LooseAmmoBundleRecipe" type="string"  defaultValue="Yes">
+		<Description key="tipMiscSettings_LooseAmmoBundleRecipe" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+<!-- <Switch name="MiscSettings_LooseAmmoBundleRecipeAmmoPress" displayKey="uiMiscSettings_LooseAmmoBundleRecipeAmmoPress" tooltipKey="tipMiscSettings_LooseAmmoBundleRecipeAmmoPress" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="MiscSettings_LooseAmmoBundleRecipeAmmoPress" displayKey="uiMiscSettings_LooseAmmoBundleRecipeAmmoPress" type="string"  defaultValue="Yes">
+		<Description key="tipMiscSettings_LooseAmmoBundleRecipeAmmoPress" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+
+<!-- <Switch name="MiscSettings_45ACP556APHPBookUnlock" displayKey="uiMiscSettings_45ACP556APHPBookUnlock" tooltipKey="tipMiscSettings_45ACP556APHPBookUnlock" defaultValue="No" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="MiscSettings_45ACP556APHPBookUnlock" displayKey="uiMiscSettings_45ACP556APHPBookUnlock" type="string"  defaultValue="Yes">
+		<Description key="tipMiscSettings_45ACP556APHPBookUnlock" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
+
+
+
+<!-- <Switch name="MiscSettings_Universalammo45ACPEnhanced" displayKey="uiMiscSettings_Universalammo45ACPEnhanced" tooltipKey="tipMiscSettings_Universalammo45ACPEnhanced" defaultValue="All .45 ACP Weapons" leftValue="Some .45 ACP Weapons" rightValue="All .45 ACP Weapons" /> -->
+
+
+	<Switch name="MiscSettings_Universalammo45ACPEnhanced" displayKey="uiMiscSettings_Universalammo45ACPEnhanced" type="string"  defaultValue="All .45 ACP Weapons">
+		<Description key="tipMiscSettings_Universalammo45ACPEnhanced" />
+		<Buttons left="Some .45 ACP Weapons" right="All .45 ACP Weapons" />
+	</Switch>
+
+
+<!-- <Switch name="MiscSettings_UniversalammoShotgunHellFire" displayKey="uiMiscSettings_UniversalammoShotgunHellFire" tooltipKey="tipMiscSettings_UniversalammoShotgunHellFire" defaultValue="Default" leftValue="Default" rightValue="All Shotguns" /> -->
+
+	<Switch name="MiscSettings_UniversalammoShotgunHellFire" displayKey="uiMiscSettings_UniversalammoShotgunHellFire" type="string"  defaultValue="Default">
+		<Description key="tipMiscSettings_UniversalammoShotgunHellFire" />
+		<Buttons left="Default" right="All Shotguns" />
+	</Switch>
+
 </Category>
+
+
 <Category name="MiscSettingsCategoryLeverAction" displayKey="uiMiscSettingsCategory1LeverAction" tooltipKey="tipMiscSettingsCategory1LeverAction">
-<Description key="XXX" />
-<Switch name="MiscSettings_LAR44magnum" displayKey="uiMiscSettings_LAR44magnum" tooltipKey="tipMiscSettings_LAR44magnum" defaultValue="7.62mm" leftValue=".44 Magnum" rightValue="7.62mm" />
-<Switch name="MiscSettings_modGunShotgunTubeExtenderMagazine" displayKey="uiMiscSettings_modGunShotgunTubeExtenderMagazine" tooltipKey="tipMiscSettings_modGunShotgunTubeExtenderMagazine" defaultValue="Yes" leftValue="No" rightValue="Yes" />
+<Description key="tipMiscSettingsCategory1LeverAction" />
+
+
+<!-- <Switch name="MiscSettings_LAR44magnum" displayKey="uiMiscSettings_LAR44magnum" tooltipKey="tipMiscSettings_LAR44magnum" defaultValue="7.62mm" leftValue=".44 Magnum" rightValue="7.62mm" /> -->
+
+	<Switch name="MiscSettings_LAR44magnum" displayKey="uiMiscSettings_LAR44magnum" type="string"  defaultValue="7.62mm">
+		<Description key="tipMiscSettings_UniversalammoShotgunHellFire" />
+		<Buttons left=".44 Magnum" right="7.62mm" />
+	</Switch>
+
+<!-- <Switch name="MiscSettings_modGunShotgunTubeExtenderMagazine" displayKey="uiMiscSettings_modGunShotgunTubeExtenderMagazine" tooltipKey="tipMiscSettings_modGunShotgunTubeExtenderMagazine" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="MiscSettings_modGunShotgunTubeExtenderMagazine" displayKey="uiMiscSettings_modGunShotgunTubeExtenderMagazine" type="string"  defaultValue="Yes">
+		<Description key="tipMiscSettings_modGunShotgunTubeExtenderMagazine" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
 </Category>
 <Category name="MiscSettingsCategoryShorty" displayKey="uiMiscSettingsCategoryShorty" tooltipKey="tipMiscSettingsCategoryShorty">
-<Description key="XXX" />
-<Switch name="MiscSettings_Shorty" displayKey="uiMiscSettings_Shorty" tooltipKey="tipMiscSettings_Shorty" defaultValue="Yes" leftValue="No" rightValue="Yes" />
+<Description key="tipMiscSettingsCategoryShorty" />
+
+
+<!-- <Switch name="MiscSettings_Shorty" displayKey="uiMiscSettings_Shorty" tooltipKey="tipMiscSettings_Shorty" defaultValue="Yes" leftValue="No" rightValue="Yes" /> -->
+
+	<Switch name="MiscSettings_Shorty" displayKey="uiMiscSettings_Shorty" type="string"  defaultValue="Yes">
+		<Description key="tipMiscSettings_Shorty" />
+		<Buttons left="No" right="Yes" />
+	</Switch>
+
 </Category>
+
+
 <Category name="MiscSettingsCategoryDualWeapons" displayKey="uiMiscSettingsCategoryDualWeapons" tooltipKey="tipMiscSettingsCategoryDualWeapons">
-<Description key="XXX" />
-<Switch name="MiscSettings_CostDualWeapons" displayKey="uiMiscSettings_CostDualWeapons" tooltipKey="tipMiscSettings_CostDualWeapons" defaultValue="Default" leftValue="Balanced" rightValue="Default" />
-<Switch name="MiscSettings_EnableDualWeapons" displayKey="uiMiscSettings_EnableDualWeapons" tooltipKey="tipMiscSettings_EnableDualWeapons" defaultValue="On" leftValue="Off" rightValue="On" />
+<Description key="tipMiscSettingsCategoryDualWeapons" />
+
+
+<!-- <Switch name="MiscSettings_CostDualWeapons" displayKey="uiMiscSettings_CostDualWeapons" tooltipKey="tipMiscSettings_CostDualWeapons" defaultValue="Default" leftValue="Balanced" rightValue="Default" /> -->
+
+	<Switch name="MiscSettings_CostDualWeapons" displayKey="uiMiscSettings_CostDualWeapons" type="string"  defaultValue="Default">
+		<Description key="tipMiscSettings_CostDualWeapons" />
+		<Buttons left="Balanced" right="Default" />
+	</Switch>
+
+<!-- <Switch name="MiscSettings_EnableDualWeapons" displayKey="uiMiscSettings_EnableDualWeapons" tooltipKey="tipMiscSettings_EnableDualWeapons" defaultValue="On" leftValue="Off" rightValue="On" /> -->
+
+	<Switch name="MiscSettings_EnableDualWeapons" displayKey="uiMiscSettings_EnableDualWeapons" type="string"  defaultValue="On">
+		<Description key="tipMiscSettings_EnableDualWeapons" />
+		<Buttons left="Off" right="On" />
+	</Switch>
+
+
 </Category>
-<Category name="NoteKick2" displayKey="uiNoteKick2" tooltipKey="tipNoteKick2" />
-<Description key="XXX" />
+<Category name="NoteKick2" displayKey="uiNoteKick2" tooltipKey="tipNoteKick2" >
+<Description key="tipNoteKick2"/>
+
+</Category>
+
 </Tab>
 </Global>
 <World />

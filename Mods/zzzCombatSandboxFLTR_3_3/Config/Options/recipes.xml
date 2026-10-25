@@ -528,14 +528,15 @@ REF
 </recipe> -->
 
 <!-- *** 2.4 Faster T4 crafting: reduce crafting time to T3 Q6 -->
-
+<!-- CHANGED 20261026 -->
+<!-- 
 <conditional>
-<if cond="modsetting('Combat_Sandbox_FLTR', 'Global', 'T4Settings.T4CraftingCategory.Enable_T4_CraftingFasterCrafting') == 'Faster Crafting'">
+<if cond="modsetting('Combat_Sandbox_FLTR', 'Global', 'T4Settings.T4CraftingCategory.Enable_T4_CraftingFasterCrafting') == 'Faster Crafting'"> -->
 
 <!-- <removeattribute xpath="/recipes/recipe[starts-with(@name, 'IZYgunT4') or starts-with(@name, 'IZYMeleeT4')]/@craft_time" /> -->
 
-</if>
-</conditional>
+<!-- </if>
+</conditional> -->
 
 <!-- *** 3. Challenge Runs: Disabling weapon and ammo crafting -->
 
